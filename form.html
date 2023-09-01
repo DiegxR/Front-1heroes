@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="promo"><h3>Descuentos 20%</h3></div>
+    <section>
+        <header><h1>Heroes</h1></header>
+        <main>
+           <article class="addContent">
+            <form class="addForm" action="">
+                <h3 class="center">Añade tu super</h3>
+                <p class="center">Agrega tu personaje favorito completando las opciones.</p>
+               <div class="formContent">
+                   <section class="formSection">
+                    <div class="flex-col">
+                        <label for="">*Nombre</label>
+                        <input class="radius" type="text">
+                    </div>
+                    <div class="flex-col">
+                        <label for="">*Fecha</label>
+                        <input class="radius" type="date">
+                    </div>
+                    <div>
+                        <textarea class="radius" name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+                    </div>
+                  </section>
+                  <section>
+                    <div class="flex-col">
+                        <label for="">*Especie</label>
+                       <select class="radius" name="" id="">
+                        <option value="">Humano</option>
+                        <option value="">Mutante</option>
+                        <option value="">Alien</option>
+                       </select>
+                    </div>
+                    <div class="flex-col file">
+                        <label for="">*Agregar Foto</label>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <label for="">Poderes</label>
+                        <div class="flex">
+                            <input type="checkbox">
+                            <p>Volar</p>
+                        </div>
+                        <div class="flex">
+                            <input type="checkbox">
+                            <p>Regeneración</p>
+                        </div>
+                        <div class="flex">
+                            <input type="checkbox">
+                            <p>Superfuerza</p>
+                        </div>
+                        <div class="flex">
+                            <input type="checkbox">
+                            <p>Vista Laser</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p>Tipo de personaje</p>
+                        <div class="flex">
+                            <input type="radio">
+                            <p>Heroe/Heroina</p>
+                        </div>
+                        <div class="flex">
+                            <input type="radio">
+                            <p>Villano/Villana</p>
+                        </div>
+                        <div class="flex">
+                            <input type="radio">
+                            <p>Antiheroe/Antiheroina</p>
+                        </div>
+                    </div>
+                  </section>
+               </div>
+               <button class="AddBtn"><a href="./index.html">Añadir</a></button>
+            </form>
+           </article>
+            
+        </main>
+        <footer class="footer"> <h4>Todos los derechos reservados a FRONT END 1</h4></footer>
+    </section>
+</body>
+</html>

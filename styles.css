@@ -35,18 +35,19 @@ header h1 {
     font-size: 40px; 
 }
 
-main {
+.cardContainer {
     width: 100%;
     height: 100%;
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card {
-    width: 350px;
-    height: 580px;
+    width: 300px;
+    height: 500px;
     position: relative;
     border-radius: 20px;
     background-color: #F3F3F3;
@@ -100,7 +101,7 @@ button {
     border: none;
 }
 
-section {
+.container {
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -125,11 +126,112 @@ footer h4{
 .icon img{
     width: 25px;
 }
+.addCard{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 50%;
+}
+
+.addContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 5%;
+ }
+ .flex{
+    display: flex;
+    gap: 10px;
+ }
+ .addForm{
+    display: flex;
+    flex-direction: column;
+    background: #00669F;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    border-radius: 15px;
+ }
+ .radius{
+    border-radius: 12px;
+    padding: 15px;
+ }
+ .file{
+    margin-top: 13px;
+    margin-bottom: 10px;
+    height: 80px;
+ }
+ .file input{
+   padding: 13px;
+ }
+ .formContent{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+ }
+ .line{
+    height: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+ }
+ .center{
+    text-align: center;
+ }
+ .flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .AddBtn{
+   background-color: #1CD1B0;
+   align-self: center;
+   margin: 20px;
+   border-radius: 15px;
+   
+ }
+ .AddBtn a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+ }
+ .formSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
 @media (max-width: 1000px){
     main{
         flex-direction: column;
         overflow-y: scroll;
-        padding-top: 15%;
+        padding-top: 5%;
         justify-content: flex-start;
+        margin-bottom: 5%;
+        margin-top: 0%;
+    }
+    .cardContainer{
+        justify-content: flex-start;
+    }
+    
+    .addContent {
+        margin-top: -50px;
+        height: 100%;
+     }
+}
+@media (max-width: 880px){
+    .formContent{
+        flex-direction: column;
+    }
+    header{
+        position: relative;
+    }
+    .footer{
+        position: relative;
+    }
+    header{
+        top: 0;
     }
 }
